@@ -1,0 +1,64 @@
+/* =========================================================
+   INSIGHT '27 — DESIGN TOKENS
+   Edit values here to re-theme the entire site.
+   ========================================================= */
+
+:root {
+  /* ---------- Brand Colors ---------- */
+  --blue-950: #040b1d;
+  --blue-900: #061630;
+  --blue-800: #081a3e;
+  --blue-700: #0b2447;   /* primary deep blue */
+  --blue-600: #123b6e;
+  --blue-500: #1b5ba0;
+  --blue-400: #2f7cc4;
+
+  --gold:        #c9a227;  /* secondary accent gold */
+  --gold-light:  #f0d48a;
+  --gold-mid:    #e0b94a;
+  --gold-dark:   #9a7b1e;
+  --gold-deep:   #6e5a16;
+
+  --ivory:    #f7f2e6;   /* warm paper for light sections */
+  --ivory-2:  #efe7d4;
+  --ink:      #101a2c;   /* near-black text on light bg */
+  --mist:     #8fa3bd;   /* muted blue-grey text on dark bg */
+
+  --white: #ffffff;
+
+  /* ---------- Gradients ---------- */
+  --gold-grad: linear-gradient(120deg, var(--gold-light), var(--gold) 45%, var(--gold-dark));
+  --blue-grad: linear-gradient(150deg, var(--blue-600), var(--blue-900));
+
+  /* ---------- Typography ---------- */
+  --font-serif: "Fraunces", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans:  "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* ---------- Spacing Scale ---------- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.875rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.75rem;
+  --space-xl: 5rem;
+  --space-2xl: 8.5rem;
+
+  --container: 1280px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+
+  /* ---------- Effects ---------- */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 30px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 24px 60px -24px rgba(4, 11, 29, 0.55);
+  --shadow-gold: 0 18px 50px -18px rgba(201, 162, 39, 0.45);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --speed: 0.6s;
+
+  /* ---------- Layout ---------- */
+  --header-h: 84px;
+  --section-pad: clamp(4.5rem, 10vw, 9rem);
+}
