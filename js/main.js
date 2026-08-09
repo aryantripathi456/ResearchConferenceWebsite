@@ -198,11 +198,12 @@
   function animateCount(el) {
     const target = parseInt(el.dataset.count, 10) || 0;
     const suffix = el.dataset.suffix || "";
-    if (reduceMotion) { el.textContent = target + suffix; return; }
-    const dur = 1400, start = performance.now();
+    const dur = reduceMotion ? 700 : 1400;
+    const easing = reduceMotion ? (p) => p : (p) => 1 - Math.pow(1 - p, 3);
+    const start = performance.now();
     function tick(now) {
       const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
+      const eased = easing(p);
       el.textContent = Math.round(target * eased).toLocaleString("en-IN") + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
@@ -364,7 +365,6 @@
   /* ---------------- Hero canvas (aurora fallback / backdrop) ---------------- */
   function buildHero() {
     const canvas = $("#heroCanvas");
-    const video = $("#heroVideo");
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     let W = 0, H = 0, dpr = 1;
@@ -444,30 +444,12 @@
       requestAnimationFrame(frame);
     }
 
-    // Video fallback detection: if assets/hero.mp4 cannot play, run aurora.
-    const videoWorks = () => video && !video.error && video.readyState >= 2;
-    function useVideo() {
-      if (video) { video.classList.remove("is-hidden"); canvas.classList.add("is-hidden"); }
-    }
     function useCanvas() {
-      if (video) video.classList.add("is-hidden");
       canvas.classList.remove("is-hidden");
-      if (reduceMotion) {
-        const bg = ctx.createLinearGradient(0, 0, W, H);
-        bg.addColorStop(0, "#081a3e"); bg.addColorStop(1, "#0b2447");
-        ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
-        return;
-      }
       frame(0);
     }
 
-    if (video) {
-      const tmr = setTimeout(() => { if (!videoWorks()) useCanvas(); }, 1400);
-      video.addEventListener("loadeddata", () => { clearTimeout(tmr); videoWorks() ? useVideo() : useCanvas(); });
-      video.addEventListener("error", () => { clearTimeout(tmr); useCanvas(); });
-    } else {
-      useCanvas();
-    }
+    useCanvas();
   }
   buildHero();
 })();
