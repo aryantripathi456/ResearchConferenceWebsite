@@ -13,68 +13,68 @@
   /* ---------------- Tracks data ---------------- */
   const TRACKS = [
     {
-      n: "01", t: "AI & Machine Learning",
+      n: "01", t: "NLP",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M17 5l2 2M7 17l-2 2"/></svg>',
-      title: "Artificial Intelligence & Machine Learning",
-      desc: "The algorithmic frontier — from core learning theory to the agentic systems reshaping how machines perceive, generate, decide, and act beside us.",
-      chips: ["Deep Learning", "LLMs & Alignment", "Computer Vision", "Reinforcement Learning", "Responsible AI", "Edge & Robotics"],
-      meta: "Track Chair: Dr. Maya Srinivasan · Best Paper Award sponsored by the AI Forum"
+      title: "Natural Language Processing and Multilingual Intelligence",
+      desc: "Multilingual NLP, speech interfaces, and AI that understands context, culture, and code-switching—for a globally connected digital future.",
+      chips: ["Large Language Models (LLMs)", "Sentiment Analysis and Data Mining", "QA and Conversational AI", "Low-Resource NLP", "Machine Translation and Multimodal Language Processing"],
+      meta: "Track 1: NLP and Multilingual Intelligence"
     },
     {
-      n: "02", t: "Sustainable Engineering",
+      n: "02", t: "Sustainable AI",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 4C9 4 4 10 4 20c10 0 16-5 16-16Z"/><path d="M4 20C8 12 12 8 20 8"/></svg>',
-      title: "Sustainable Engineering & Green Technologies",
-      desc: "How materials, infrastructure and manufacturing must re-engineer themselves for low-carbon duty — without surrendering performance or profit.",
-      chips: ["Circular Economy", "Green Chemistry", "Smart Grids", "Life-Cycle Analysis", "Earth-Carbon Materials", "Clean Manufacturing"],
-      meta: "Track Chair: Prof. Anuradha Bansal · Green Innovation Grant announced"
+      title: "Sustainable AI",
+      desc: "Energy-efficient model training and Green AI metrics for systems that respect planetary and computational limits.",
+      chips: ["Energy-efficient model training and Green AI metrics", "AI for climate modeling, forecasting, and mitigation", "AI-driven renewable energy systems and smart grids", "Sustainable data center design", "Trade-offs between model performance and environmental cost"],
+      meta: "Track 2: Sustainable AI"
     },
     {
-      n: "03", t: "Healthcare & Biomedical",
+      n: "03", t: "Generative AI",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12h4l2-7 4 10 2-5 3 2h5"/></svg>',
-      title: "Healthcare & Biomedical Innovation",
-      desc: "From bench to bedside — sensors, bioinformatics and next-generation therapeutics engineered to put clinic-grade diagnostics into home and field.",
-      chips: ["Biologics", "Digital Health", "IoT Diagnostics", "Oncology Omics", "Pharma 4.0", "Rehab & Prosthetics"],
-      meta: "Track Chair: Dr. Elena Petrova · open biosensor entry demo"
+      title: "Generative AI",
+      desc: "Foundation models and multimodal generative architectures moving from novelty to infrastructure.",
+      chips: ["Diffusion models, GANs", "Prompt engineering", "Foundation models and multimodal generative architectures", "Generative AI in healthcare, design, and simulation", "Retrieval-augmented generation (RAG) systems"],
+      meta: "Track 3: Generative AI"
     },
     {
-      n: "04", t: "Materials & Nanotechnology",
+      n: "04", t: "Responsible AI",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><circle cx="12" cy="12" r="3"/></svg>',
-      title: "Advanced Materials & Nanotechnology",
-      desc: "Molecules, meta-materials and matter tuned to the atomic scale — the quiet physics that engineering problems are solved with.",
-      chips: ["Nanomaterials", "Smart Materials", "Energy Storage", "Metamaterials", "Nano-Electronics", "Composite Chemistries"],
-      meta: "Track Chair: Prof. David Okoro · best poster prize from industry panel"
+      title: "Responsible, Safe, and Trustworthy AI",
+      desc: "Explainability, governance, and accountability for AI systems that can be understood, verified, and relied upon.",
+      chips: ["Explainable AI (XAI) and interpretability methods", "AI governance, regulation, and compliance frameworks", "Accountability, auditability, and transparency in AI systems", "Societal, legal, and philosophical implications of AI", "Responsible deployment of autonomous systems"],
+      meta: "Track 4: Responsible, Safe, and Trustworthy AI"
     },
     {
-      n: "05", t: "Data & Cybersecurity",
+      n: "05", t: "High Performance Analytics",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>',
-      title: "Data Science & Cybersecurity",
-      desc: "Trust at information scale — analytics that reveal, cryptography that protects, and forensic craft that keeps the digital society honest.",
-      chips: ["Privacy Engineering", "Digital Forensics", "Quantum-Safe Crypto", "Trustworthy AI", "Threat Intelligence", "Big-Data Architectural"],
-      meta: "Track Chair: Dr. Priya Iyer · hands-on CTF sprint"
+      title: "High Performance Analytics and Data-Intensive Intelligence",
+      desc: "Analytics at a scale where speed and accuracy cannot be traded off against each other.",
+      chips: ["Big data processing frameworks and distributed computing", "High-performance computing (HPC) architectures for AI", "In-memory computing and analytics optimization", "Quantum computing for data analytics", "Time series and Forecasting"],
+      meta: "Track 5: High Performance Analytics and Data-Intensive Intelligence"
     },
     {
-      n: "06", t: "Energy & Climate",
+      n: "06", t: "Security",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>',
-      title: "Renewable Energy & Climate Action",
-      desc: "The storage problem, the grid problem and the policy problem — renewable scholarship operating at the junction of watts and conventions.",
-      chips: ["Photovoltaics", "Green Storage", "Carbon Capture", "Climate Modelling", "Agrivoltaics", "Just Transition"],
-      meta: "Track Chair: Prof. Rajesh Mehta · net-zero poster symposium"
+      title: "Security, Privacy, and Resilient Systems",
+      desc: "Trust, privacy, and resilience across networks, clouds, and devices.",
+      chips: ["Network security and secure communication protocols", "Cloud and edge device security", "Cryptography and Blockchain", "Digital forensics and incident response", "Zero-trust architectures"],
+      meta: "Track 6: Security, Privacy, and Resilient Systems"
     },
     {
-      n: "07", t: "Business & Finance",
+      n: "07", t: "Machine Learning",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>',
-      title: "Emerging Business Models & Finance",
-      desc: "Value built on data, reputation and sunlight — new firms, new markets and the financial instruments the next decade runs on.",
-      chips: ["FinTech", "Behavioural Finance", "ESG & Green Bonds", "Digital Markets", "Innovation Policy", "Web3 & DeFi"],
-      meta: "Track Chair: Dr. Aditya Verma · market simulation workshop"
+      title: "Machine Learning and Deep Learning",
+      desc: "Computational intelligence and neural networks for modern learning systems.",
+      chips: ["Computational Intelligence and Neural Networks", "Reeinforcement Learning", "MLOps", "ML for Smart Cities and IOT", "Graph ML"],
+      meta: "Track 7: Machine Learning and Deep Learning"
     },
     {
-      n: "08", t: "Society · Culture · Humanity",
+      n: "08", t: "Computer Vision",
       icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.4 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.4-4-9s1.5-6.4 4-9Z"/></svg>',
-      title: "Society, Culture & Humanities 5.0",
-      desc: "What machines should never mediate — digital culture, civil institutions and the human record in an automating age.",
-      chips: ["Digital Humanities", "Cultural Heritage", "Public Policy", "Smart Cities", "Media Studies", "Future of Work"],
-      meta: "Track Chair: Dr. Haneen Li · Society 5.0 roundtable"
+      title: "Computer Vision",
+      desc: "Image understanding, reconstruction, and mixed reality for visual intelligence.",
+      chips: ["Image Processing", "Video Analytics and Action recognition", "3D Computer Vision and Reconstruction", "AR,VR and Mixed Reality", "Computer Vision for Environmental monitoring and sustainability"],
+      meta: "Track 8: Computer Vision"
     }
   ];
 
@@ -86,7 +86,7 @@
     },
     {
       q: "What", letter: "W", tag: "The Conference",
-      a: "A three-day hybrid assembly across 8 tracks — keynotes, panels, posters, and published proceedings, all live-streamed."
+      a: "A two-day hybrid assembly across 8 tracks — keynotes, panels, posters, and published proceedings, all live-streamed."
     },
     {
       q: "Who", letter: "W", tag: "The People",
@@ -94,11 +94,11 @@
     },
     {
       q: "When", letter: "W", tag: "The Dates",
-      a: "25–27 February 2027. Abstracts close 30 November 2026; early-bird registration till 10 January 2027."
+      a: "12–13 February 2027. Abstracts close 30 November 2026; early-bird registration till 10 January 2027."
     },
     {
       q: "Where", letter: "W", tag: "The Place",
-      a: "Jagannath Hitkari College, Alwar (India), hybrid-streamed from partner nodes in Asia, Europe, and Africa."
+      a: "Jai Hind College, Mumbai (India), hybrid-streamed across social media."
     }
   ];
 
@@ -171,6 +171,28 @@
   }
   window.addEventListener("scroll", updateProgress, { passive: true });
   updateProgress();
+
+  /* ---------------- Marquee ticker ---------------- */
+  const marqueeTrack = $("#marqueeTrack");
+  if (marqueeTrack) {
+    let x = 0;
+    let last = performance.now();
+    const speed = 34; // px per second
+
+    marqueeTrack.style.animation = "none";
+
+    function tick(now) {
+      const dt = (now - last) / 1000;
+      last = now;
+      x -= speed * dt;
+      const loopWidth = marqueeTrack.scrollWidth / 2;
+      if (loopWidth > 0 && -x >= loopWidth) x += loopWidth;
+      marqueeTrack.style.transform = `translate3d(${x}px, 0, 0)`;
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
 
   /* ---------------- Counters ---------------- */
   function animateCount(el) {
@@ -277,7 +299,8 @@
     function openStrip(i) {
       $$(".w-card", strip).forEach((c) => c.classList.toggle("is-active", parseInt(c.dataset.i, 10) === i));
       const active = $(".w-card.is-active", strip);
-      if (active) { active.querySelector(".w-body").innerHTML = `
+      if (active) {
+        active.querySelector(".w-body").innerHTML = `
         <h3><span class="gold-letter">${WS[i].q}</span></h3>
         <p>${WS[i].a}</p>
         <span class="w-tag">${WS[i].tag}</span>`;
