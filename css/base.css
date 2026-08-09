@@ -66,13 +66,13 @@ h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 600;
   line-height: 1.12;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
 }
 
 .eyebrow {
   font-family: var(--font-sans);
   font-size: 0.72rem;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--gold);
   display: inline-flex;
@@ -308,8 +308,9 @@ h1, h2, h3, h4 {
 }
 .marquee-track {
   display: inline-flex;
+  width: max-content;
+  min-width: 200%;
   gap: 0;
-  animation: marquee 36s linear infinite;
   will-change: transform;
 }
 .marquee-item {
@@ -328,11 +329,6 @@ h1, h2, h3, h4 {
   color: var(--gold);
   font-size: 0.7rem;
 }
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 /* ---------- Reveal on scroll ---------- */
 .reveal {
   opacity: 0;
