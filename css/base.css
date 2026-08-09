@@ -343,11 +343,7 @@ h1, h2, h3, h4 {
 .reveal.d4 { transition-delay: 0.32s; }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 1.2s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.18s !important;
-  }
+  * { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
