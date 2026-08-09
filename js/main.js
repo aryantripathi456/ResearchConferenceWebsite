@@ -198,12 +198,11 @@
   function animateCount(el) {
     const target = parseInt(el.dataset.count, 10) || 0;
     const suffix = el.dataset.suffix || "";
-    const dur = reduceMotion ? 700 : 1400;
-    const easing = reduceMotion ? (p) => p : (p) => 1 - Math.pow(1 - p, 3);
-    const start = performance.now();
+    if (reduceMotion) { el.textContent = target + suffix; return; }
+    const dur = 1400, start = performance.now();
     function tick(now) {
       const p = Math.min((now - start) / dur, 1);
-      const eased = easing(p);
+      const eased = 1 - Math.pow(1 - p, 3);
       el.textContent = Math.round(target * eased).toLocaleString("en-IN") + suffix;
       if (p < 1) requestAnimationFrame(tick);
     }
